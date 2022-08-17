@@ -14,7 +14,25 @@ import android.widget.ListView;
 public class HomeFragment extends Fragment {
     ListView lsdGatos;
 
-
+    String nomeGato[]=
+            {
+                    "Gato da Quebrada",
+                    "Nerdola otaku",
+                    "Gato Pomba",
+                    "Gato Romano"
+            };
+    String descricaoGato[]=
+            {
+            "O maior cheirador de pó de todos os tempos!!!",
+            "Vive assistindo anime e chorando no telhado!!!",
+            "Parece uma POMBA!!!",
+            "estudou com maquiaveL1"
+            };
+    String numGato[]={"10.0", "6.0","8.0", "9.5"};
+    int imagemGato[]={
+            R.drawable.gatocria, R.drawable.gatonerd,
+            R.drawable.Gatopomba, R.drawable.gatoromano
+    };
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
