@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="200dp"
-    android:background=""
     android:orientation="vertical">
 
     <LinearLayout
@@ -16,7 +15,7 @@
             android:layout_height="150dp"
             android:layout_marginTop="10dp"
             android:scaleType="centerInside"
-            android:src="@drawable/Gatopomba" />
+            android:src="@drawable/gatopomba" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,7 +27,7 @@
                 android:id="@+id/txtNomeGato"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Gato"
+                android:text="Gato Pomba"
                 android:textColor="#FF5722"
                 android:textSize="30sp"
                 android:textStyle="bold" />

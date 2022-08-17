@@ -8,7 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 
 public class HomeFragment extends Fragment {
@@ -31,7 +33,7 @@ public class HomeFragment extends Fragment {
     String numGato[]={"10.0", "6.0","8.0", "9.5"};
     int imagemGato[]={
             R.drawable.gatocria, R.drawable.gatonerd,
-            R.drawable.Gatopomba, R.drawable.gatoromano
+            R.drawable.gatopomba, R.drawable.gatoromano
     };
 
     @Override
@@ -57,7 +59,7 @@ public class HomeFragment extends Fragment {
 
         @Override
         public int getCount() {
-            return 0;
+            return imagemGato.length;
         }
 
         @Override
@@ -72,7 +74,26 @@ public class HomeFragment extends Fragment {
 
         @Override
         public View getView(int i, View view, ViewGroup viewGroup) {
-            return null;
+
+            TextView txtNomeGato, txtDescricaoGato, txtNumGato;
+            ImageView imgModeloGato;
+
+            View v = getLayoutInflater().inflate(R.layout.modelogatos, null);
+
+
+
+            txtNomeGato = v.findViewById(R.id.txtNomeGato);
+            txtDescricaoGato = v.findViewById(R.id.txtDescricaoGato);
+            txtNumGato = v.findViewById(R.id.txtNumGato);
+            imgModeloGato = v.findViewById(R.id.imgModeloGato);
+
+            txtNomeGato.setText(nomeGato[i]);
+            txtDescricaoGato.setText(descricaoGato[i]);
+            txtNumGato.setText(numGato[i]);
+            imgModeloGato.setImageResource(imagemGato[i]);
+
+            return v;
+
         }
     }
 }
